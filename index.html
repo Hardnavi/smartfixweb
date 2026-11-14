@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SMARTFIX AI | Servicio técnico y diagnóstico de celulares en Oruro</title>
+  <meta name="description" content="SMARTFIX AI combina servicio técnico de celulares y diagnóstico inteligente orientativo en Oruro, Bolivia. Analiza los síntomas de tu equipo y recibe recomendaciones claras. Atención por WhatsApp.">
+  <meta name="author" content="SMARTFIX AI">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#070d1c">
+
+  <!-- Open Graph / Redes sociales. Para producción, usa una URL absoluta en og:image. -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SMARTFIX AI">
+  <meta property="og:locale" content="es_BO">
+  <meta property="og:title" content="SMARTFIX AI | Tecnología inteligente para cuidar tu celular">
+  <meta property="og:description" content="Servicio técnico de celulares y diagnóstico inteligente orientativo en Oruro, Bolivia. Conoce los posibles problemas de tu equipo y coordina atención por WhatsApp.">
+  <meta property="og:image" content="assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="SMARTFIX AI: servicio técnico de celulares y diagnóstico inteligente en Oruro, Bolivia">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SMARTFIX AI | Tecnología inteligente para cuidar tu celular">
+  <meta name="twitter:description" content="Diagnóstico inteligente orientativo y servicio técnico de celulares en Oruro, Bolivia.">
+  <meta name="twitter:image" content="assets/img/og-image.png">
+
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo-mark.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/styles.css" rel="stylesheet">
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      root.classList.add('js');
+      try {
+        var saved = localStorage.getItem('sf-theme');
+        if (saved === 'dark') root.setAttribute('data-bs-theme', 'dark');
+      } catch (error) { /* Sin almacenamiento disponible: se usa el tema claro. */ }
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "SMARTFIX AI",
+    "description": "Emprendimiento tecnológico de Oruro, Bolivia, orientado al servicio técnico de celulares y al diagnóstico inteligente orientativo.",
+    "telephone": "+591-60404018",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Oruro",
+      "addressCountry": "BO"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Oruro"
+    },
+    "knowsAbout": [
+      "Diagnóstico de celulares",
+      "Reparación de celulares",
+      "Mantenimiento preventivo",
+      "Optimización de dispositivos móviles",
+      "Asesoramiento tecnológico"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <!-- ============================= NAVEGACIÓN ============================= -->
+  <header class="site-header">
+    <nav class="site-nav" id="siteNav" aria-label="Navegación principal">
+      <div class="container nav-inner">
+        <a class="brand" href="#inicio">
+          <img class="brand-mark" src="assets/img/logo-mark.svg" alt="" width="42" height="42">
+          <span class="brand-type">SMARTFIX<span class="brand-ai">AI</span></span>
+          <span class="visually-hidden"> Ir al inicio</span>
+        </a>
+
+        <ul class="desktop-nav d-none d-xl-flex">
+          <li><a class="nav-link active" href="#inicio" data-nav-link>Inicio</a></li>
+          <li><a class="nav-link" href="#servicios" data-nav-link>Servicios</a></li>
+          <li><a class="nav-link" href="#diagnostico" data-nav-link>Diagnóstico IA</a></li>
+          <li><a class="nav-link" href="#como-funciona" data-nav-link>Cómo funciona</a></li>
+          <li><a class="nav-link" href="#nosotros" data-nav-link>Nosotros</a></li>
+          <li><a class="nav-link" href="#faq" data-nav-link>Preguntas frecuentes</a></li>
+          <li><a class="nav-link" href="#contacto" data-nav-link>Contacto</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar a modo oscuro" title="Cambiar tema">
+            <i class="bi bi-moon-stars" id="themeIcon" aria-hidden="true"></i>
+          </button>
+          <a class="btn btn-sf btn-sf-primary btn-nav-cta d-none d-lg-inline-flex" href="#diagnostico">
+            Analizar mi celular
+            <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+          </a>
+          <button class="nav-toggle d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-controls="mobileNav" aria-label="Abrir menú de navegación">
+            <span class="nav-toggle-lines" aria-hidden="true"><span></span><span></span><span></span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="offcanvas offcanvas-end mobile-nav" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavTitle">
+    <div class="offcanvas-header">
+      <a class="brand" href="#inicio">
+        <img class="brand-mark" src="assets/img/logo-mark.svg" alt="" width="38" height="38">
+        <span class="brand-type">SMARTFIX<span class="brand-ai">AI</span></span>
+        <span class="visually-hidden"> Ir al inicio</span>
+      </a>
+      <button type="button" class="mobile-nav-close" data-bs-dismiss="offcanvas" aria-label="Cerrar menú">
+        <i class="bi bi-x-lg" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div class="offcanvas-body">
+      <p class="mobile-nav-kicker" id="mobileNavTitle">Navegación</p>
+      <ul class="mobile-nav-links">
+        <li><a href="#inicio"><span>01</span> Inicio <i class="bi bi-arrow-right" aria-hidden="true"></i></a></li>
+        <li><a href="#servicios"><span>02</span> Servicios <i class="bi bi-arrow-right" aria-hidden="true"></i></a></li>
+        <li><a href="#diagnostico"><span>03</span> Diagnóstico IA <i class="bi bi-arrow-right" aria-hidden="true"></i></a></li>
+        <li><a href="#como-funciona"><span>04</span> Cómo funciona <i class="bi bi-arrow-right" aria-hidden="true"></i></a></li>
+        <li><a href="#nosotros"><span>05</span> Nosotros <i class="bi bi-arrow-right" aria-hidden="true"></i></a></li>
+        <li><a href="#faq"><span>06</span> Preguntas frecuentes <i class="bi bi-arrow-right" aria-hidden="true"></i></a></li>
+        <li><a href="#contacto"><span>07</span> Contacto <i class="bi bi-arrow-right" aria-hidden="true"></i></a></li>
+      </ul>
+      <div class="mobile-nav-cta">
+        <a class="btn btn-sf btn-sf-primary w-100" href="#diagnostico">
+          <i class="bi bi-stars" aria-hidden="true"></i> Analizar mi celular
+        </a>
+        <a class="btn btn-sf btn-sf-outline-light w-100" href="https://wa.me/59160404018" target="_blank" rel="noopener">
+          <i class="bi bi-whatsapp" aria-hidden="true"></i> Escribir por WhatsApp
+        </a>
+      </div>
+      <div class="mobile-nav-meta">
+        <span><i class="bi bi-geo-alt" aria-hidden="true"></i> Oruro, Bolivia</span>
+        <span><i class="bi bi-shield-check" aria-hidden="true"></i> Diagnóstico orientativo</span>
+      </div>
+    </div>
+  </div>
+
+  <main id="contenido" tabindex="-1">
+    <!-- ============================= HERO ============================= -->
+    <section class="hero" id="inicio" aria-labelledby="heroTitle">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="hero-orb hero-orb-1"></span>
+        <span class="hero-orb hero-orb-2"></span>
+        <span class="hero-orb hero-orb-3"></span>
+        <span class="hero-grid"></span>
+        <svg class="hero-trace" viewBox="0 0 600 600" fill="none" preserveAspectRatio="xMidYMid slice">
+          <g stroke="rgba(56,189,248,.18)" stroke-width="1">
+            <path d="M-40 130H120L168 82H300L356 138H600"/>
+            <path d="M-40 470H92L148 414H276L330 468H600"/>
+            <path d="M60 620V520L108 472V330"/>
+            <path d="M520 620V510L472 462V360L520 312V160"/>
+          </g>
+          <g fill="#38bdf8">
+            <circle cx="120" cy="130" r="3.5" opacity=".6"/>
+            <circle cx="356" cy="138" r="3.5" opacity=".4"/>
+            <circle cx="148" cy="414" r="3.5" opacity=".5"/>
+            <circle cx="472" cy="462" r="3.5" opacity=".4"/>
+            <circle cx="108" cy="472" r="2.5" opacity=".5"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="container hero-container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-6 hero-copy">
+            <span class="hero-badge">
+              <span class="badge-pulse" aria-hidden="true"></span>
+              Servicio técnico + IA · Oruro, Bolivia
+            </span>
+            <h1 class="hero-title" id="heroTitle">
+              Tu celular en buenas manos. <span class="text-gradient">Tecnología inteligente</span> para cuidarlo.
+            </h1>
+            <p class="hero-lead">
+              En SMARTFIX AI combinamos servicio técnico especializado e inteligencia artificial para ayudarte a conocer el estado de tu dispositivo y encontrar posibles soluciones.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-sf btn-sf-primary btn-lg-sf" href="#diagnostico">
+                <i class="bi bi-stars" aria-hidden="true"></i>
+                Analizar mi celular
+              </a>
+              <a class="btn btn-sf btn-sf-ghost btn-lg-sf" href="#servicios">
+                Conocer nuestros servicios
+                <i class="bi bi-arrow-down-right" aria-hidden="true"></i>
+              </a>
+              <a class="hero-wa-link" href="https://wa.me/59160404018" target="_blank" rel="noopener">
+                <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                Contactar por WhatsApp
+              </a>
+            </div>
+            <ul class="hero-trust" aria-label="Características del servicio en línea">
+              <li><i class="bi bi-check2-circle" aria-hidden="true"></i> Diagnóstico en línea</li>
+              <li><i class="bi bi-check2-circle" aria-hidden="true"></i> Sin registro</li>
+              <li><i class="bi bi-check2-circle" aria-hidden="true"></i> Orientación directa</li>
+            </ul>
+            <p class="hero-note">
+              <i class="bi bi-info-circle" aria-hidden="true"></i>
+              El diagnóstico en línea es orientativo y no reemplaza una revisión técnica presencial.
+            </p>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="hero-visual" role="img" aria-label="Vista de ejemplo de la herramienta de diagnóstico de SMARTFIX AI, con un nivel de atención de 62 sobre 100, prioridad media y síntomas como batería, carga y temperatura.">
+              <span class="visual-sample">Vista de ejemplo</span>
+              <div class="hero-visual-glow" aria-hidden="true"></div>
+
+              <div class="phone-shell" aria-hidden="true">
+                <span class="phone-button phone-button-volume"></span>
+                <span class="phone-button phone-button-power"></span>
+                <div class="phone-screen">
+                  <span class="phone-notch"></span>
+                  <div class="phone-status">
+                    <span>9:41</span>
+                    <span class="phone-status-icons">
+                      <i class="bi bi-reception-4"></i>
+                      <i class="bi bi-wifi"></i>
+                      <i class="bi bi-battery-full"></i>
+                    </span>
+                  </div>
+                  <div class="app-head">
+                    <div class="app-brand">
+                      <span class="app-logo"><img src="assets/img/logo-mark.svg" alt="" width="26" height="26"></span>
+                      <div>
+                        <strong>SMARTFIX AI</strong>
+                        <small>Diagnóstico orientativo</small>
+                      </div>
+                    </div>
+                    <span class="app-demo-dot"><span></span> Ejemplo</span>
+                  </div>
+
+                  <div class="phone-result-card">
+                    <span class="phone-result-kicker">Nivel de atención</span>
+                    <div class="phone-gauge">
+                      <div class="phone-gauge-inner"><strong>62</strong><span>/100</span></div>
+                    </div>
+                    <span class="priority-pill priority-pill-medium">Prioridad media</span>
+                    <p>Revisa la batería y la temperatura del equipo.</p>
+                  </div>
+
+                  <div class="phone-block">
+                    <div class="phone-block-head"><span>Síntomas analizados</span><span>3 de 10</span></div>
+                    <div class="phone-chips">
+                      <span><i class="bi bi-battery-half"></i> Batería</span>
+                      <span><i class="bi bi-lightning-charge"></i> Carga</span>
+                      <span><i class="bi bi-thermometer-half"></i> Temperatura</span>
+                    </div>
+                  </div>
+
+                  <div class="phone-block phone-report-mini">
+                    <div class="mini-row">
+                      <span><i class="bi bi-battery-charging"></i> Batería y carga</span>
+                      <span class="mini-bar"><span class="mini-level-74"></span></span>
+                    </div>
+                    <div class="mini-row">
+                      <span><i class="bi bi-thermometer-half"></i> Temperatura</span>
+                      <span class="mini-bar"><span class="mini-level-58"></span></span>
+                    </div>
+                    <div class="mini-row">
+                      <span><i class="bi bi-cpu"></i> Rendimiento</span>
+                      <span class="mini-bar"><span class="mini-level-32"></span></span>
+                    </div>
+                  </div>
+
+                  <div class="phone-cta">Ver informe orientativo <i class="bi bi-arrow-right"></i></div>
+                  <p class="phone-footnote">Análisis local · Sin envío de datos</p>
+                </div>
+              </div>
+
+              <div class="float-card float-card-local" aria-hidden="true">
+                <span class="float-icon"><i class="bi bi-shield-lock"></i></span>
+                <div><strong>100% en tu navegador</strong><span>Tus datos no se envían</span></div>
+              </div>
+              <div class="float-card float-card-engine" aria-hidden="true">
+                <span class="float-icon float-icon-cyan"><i class="bi bi-cpu"></i></span>
+                <div><strong>Motor de reglas</strong><span>Orientación transparente</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <strong>6</strong>
+            <span>servicios técnicos</span>
+          </div>
+          <div class="hero-stat">
+            <strong>10</strong>
+            <span>síntomas evaluables</span>
+          </div>
+          <div class="hero-stat">
+            <strong>3</strong>
+            <span>niveles de prioridad</span>
+          </div>
+          <div class="hero-stat">
+            <strong>100%</strong>
+            <span>en tu navegador</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= SERVICIOS ============================= -->
+    <section class="section section-services" id="servicios" aria-labelledby="servicesTitle">
+      <div class="container">
+        <div class="section-head section-head-split reveal">
+          <div>
+            <span class="eyebrow"><span class="eyebrow-line"></span> Servicios</span>
+            <h2 class="section-title" id="servicesTitle">Soluciones para tu dispositivo, con criterio técnico.</h2>
+          </div>
+          <p class="section-lead">
+            Desde una orientación inicial hasta el mantenimiento del equipo. Cada caso se evalúa antes de proponer una solución.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-top">
+              <span class="service-icon"><i class="bi bi-search-heart" aria-hidden="true"></i></span>
+              <span class="service-index" aria-hidden="true">01</span>
+            </div>
+            <h3>Diagnóstico de celulares</h3>
+            <p>Identificación preliminar de posibles fallas y problemas del dispositivo a partir de sus síntomas.</p>
+            <div class="service-foot">
+              <span class="service-tag">Evaluación inicial</span>
+              <a href="https://wa.me/59160404018" target="_blank" rel="noopener" aria-label="Consultar por WhatsApp sobre diagnóstico de celulares">Consultar <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-top">
+              <span class="service-icon"><i class="bi bi-tools" aria-hidden="true"></i></span>
+              <span class="service-index" aria-hidden="true">02</span>
+            </div>
+            <h3>Reparación de celulares</h3>
+            <p>Atención de problemas de funcionamiento y componentes del dispositivo, previa evaluación del equipo.</p>
+            <div class="service-foot">
+              <span class="service-tag">Funcionamiento</span>
+              <a href="https://wa.me/59160404018" target="_blank" rel="noopener" aria-label="Consultar por WhatsApp sobre reparación de celulares">Consultar <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-top">
+              <span class="service-icon"><i class="bi bi-shield-check" aria-hidden="true"></i></span>
+              <span class="service-index" aria-hidden="true">03</span>
+            </div>
+            <h3>Mantenimiento preventivo</h3>
+            <p>Recomendaciones y cuidados para conservar el funcionamiento adecuado de tu celular.</p>
+            <div class="service-foot">
+              <span class="service-tag">Prevención</span>
+              <a href="https://wa.me/59160404018" target="_blank" rel="noopener" aria-label="Consultar por WhatsApp sobre mantenimiento preventivo">Consultar <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-top">
+              <span class="service-icon"><i class="bi bi-speedometer2" aria-hidden="true"></i></span>
+              <span class="service-index" aria-hidden="true">04</span>
+            </div>
+            <h3>Optimización del dispositivo</h3>
+            <p>Orientación sobre rendimiento, almacenamiento y funcionamiento para un uso más cómodo.</p>
+            <div class="service-foot">
+              <span class="service-tag">Rendimiento</span>
+              <a href="https://wa.me/59160404018" target="_blank" rel="noopener" aria-label="Consultar por WhatsApp sobre optimización del dispositivo">Consultar <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-top">
+              <span class="service-icon"><i class="bi bi-chat-square-text" aria-hidden="true"></i></span>
+              <span class="service-index" aria-hidden="true">05</span>
+            </div>
+            <h3>Asesoramiento tecnológico</h3>
+            <p>Orientación para identificar problemas y conocer las posibles soluciones antes de decidir.</p>
+            <div class="service-foot">
+              <span class="service-tag">Acompañamiento</span>
+              <a href="https://wa.me/59160404018" target="_blank" rel="noopener" aria-label="Consultar por WhatsApp sobre asesoramiento tecnológico">Consultar <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="service-card service-card-featured reveal">
+            <div class="service-glow" aria-hidden="true"></div>
+            <div class="service-top">
+              <span class="service-icon service-icon-cyan"><i class="bi bi-cpu" aria-hidden="true"></i></span>
+              <span class="service-index" aria-hidden="true">06</span>
+            </div>
+            <span class="featured-badge"><i class="bi bi-stars" aria-hidden="true"></i> Herramienta en línea</span>
+            <h3>Diagnóstico inteligente con IA</h3>
+            <p>Analiza los síntomas de tu equipo con nuestro motor de reglas y recibe un informe orientativo al instante.</p>
+            <div class="service-foot">
+              <span class="service-tag">IA orientativa</span>
+              <a class="service-featured-link" href="#diagnostico" aria-label="Iniciar el diagnóstico inteligente">Iniciar análisis <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <p class="services-note reveal">
+          <i class="bi bi-info-circle" aria-hidden="true"></i>
+          La disponibilidad y las condiciones de cada servicio se coordinan directamente por WhatsApp. No publicamos precios, plazos ni garantías sin una evaluación previa del equipo.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================= DIAGNÓSTICO IA ============================= -->
+    <section class="section section-diagnosis" id="diagnostico" aria-labelledby="diagnosticoTitle">
+      <div class="container">
+        <div class="section-head section-head-center reveal">
+          <span class="eyebrow"><span class="eyebrow-line"></span> Diagnóstico inteligente <span class="eyebrow-line"></span></span>
+          <h2 class="section-title" id="diagnosticoTitle">Descubre qué podría estar pasando con tu celular.</h2>
+          <p class="section-lead">
+            Responde algunas preguntas sobre tu dispositivo y sus síntomas. Recibirás un informe orientativo con posibles causas, recomendaciones y un nivel de prioridad.
+          </p>
+          <div class="header-chips">
+            <span><i class="bi bi-cpu" aria-hidden="true"></i> Motor de reglas local</span>
+            <span><i class="bi bi-shield-lock" aria-hidden="true"></i> Sin registro</span>
+            <span><i class="bi bi-file-earmark-text" aria-hidden="true"></i> Informe imprimible</span>
+          </div>
+        </div>
+
+        <noscript>
+          <div class="noscript-box" role="alert">
+            <i class="bi bi-exclamation-triangle" aria-hidden="true"></i>
+            <p>El diagnóstico interactivo necesita JavaScript. Puedes activarlo en tu navegador o escribirnos directamente por WhatsApp para contarnos tu caso.</p>
+          </div>
+        </noscript>
+
+        <div class="diagnosis-shell">
+          <div class="wizard reveal" id="diagnosisWizard">
+            <div class="wizard-head">
+              <div class="wizard-title">
+                <span class="wizard-icon"><i class="bi bi-stars" aria-hidden="true"></i></span>
+                <div>
+                  <span class="wizard-kicker">Herramienta interactiva</span>
+                  <h3>Asistente de diagnóstico</h3>
+                </div>
+              </div>
+              <span class="local-badge"><span class="local-dot" aria-hidden="true"></span> Procesado en tu navegador</span>
+            </div>
+
+            <progress class="progress-track" id="wizardProgressBar" max="100" value="25" aria-label="Progreso del diagnóstico">25 %</progress>
+
+            <ol class="stepper" aria-label="Pasos del diagnóstico">
+              <li class="step is-active" data-step-indicator="1" aria-current="step">
+                <span class="step-dot"><span>1</span><i class="bi bi-check-lg" aria-hidden="true"></i></span>
+                <span class="step-label">Dispositivo</span>
+              </li>
+              <li class="step" data-step-indicator="2">
+                <span class="step-dot"><span>2</span><i class="bi bi-check-lg" aria-hidden="true"></i></span>
+                <span class="step-label">Síntomas</span>
+              </li>
+              <li class="step" data-step-indicator="3">
+                <span class="step-dot"><span>3</span><i class="bi bi-check-lg" aria-hidden="true"></i></span>
+                <span class="step-label">Descripción</span>
+              </li>
+              <li class="step" data-step-indicator="4">
+                <span class="step-dot"><span>4</span><i class="bi bi-check-lg" aria-hidden="true"></i></span>
+                <span class="step-label">Informe</span>
+              </li>
+            </ol>
+
+            <form id="diagnosisForm" novalidate>
+              <div class="wizard-body">
+                <!-- PASO 1 -->
+                <section class="step-panel is-active" id="step-1" data-step="1" aria-labelledby="step1Title">
+                  <div class="step-heading">
+                    <span class="step-kicker">Paso 1 de 4</span>
+                    <h3 id="step1Title" tabindex="-1">Cuéntanos sobre tu dispositivo</h3>
+                    <p>Estos datos permiten contextualizar el análisis. No necesitas crear una cuenta.</p>
+                  </div>
+
+                  <div class="row g-3 g-md-4">
+                    <div class="col-md-6">
+                      <label class="form-label" for="deviceBrand">Marca del celular <span class="req" aria-hidden="true">*</span><span class="visually-hidden">(obligatorio)</span></label>
+                      <select class="form-select sf-field" id="deviceBrand" name="brand" required aria-describedby="brandError">
+                        <option value="" selected disabled>Selecciona una marca</option>
+                        <option value="Samsung">Samsung</option>
+                        <option value="Xiaomi">Xiaomi</option>
+                        <option value="Motorola">Motorola</option>
+                        <option value="Apple">Apple (iPhone)</option>
+                        <option value="Huawei">Huawei</option>
+                        <option value="Tecno">Tecno</option>
+                        <option value="Infinix">Infinix</option>
+                        <option value="Realme">Realme</option>
+                        <option value="Oppo">Oppo</option>
+                        <option value="Honor">Honor</option>
+                        <option value="Nokia">Nokia</option>
+                        <option value="Otra marca">Otra marca</option>
+                      </select>
+                      <p class="field-error" id="brandError" role="alert"></p>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label class="form-label" for="deviceModel">Modelo del dispositivo <span class="req" aria-hidden="true">*</span><span class="visually-hidden">(obligatorio)</span></label>
+                      <input class="form-control sf-field" id="deviceModel" name="model" type="text" placeholder="Ej. Galaxy A54" maxlength="60" autocomplete="off" list="modelSuggestions" required aria-describedby="modelHelp modelError">
+                      <datalist id="modelSuggestions"></datalist>
+                      <p class="field-help" id="modelHelp">Escríbelo como aparece en tu equipo, si lo conoces.</p>
+                      <p class="field-error" id="modelError" role="alert"></p>
+                    </div>
+                  </div>
+
+                  <fieldset class="form-group-block">
+                    <legend class="form-label">Sistema operativo <span class="req" aria-hidden="true">*</span><span class="visually-hidden">(obligatorio)</span></legend>
+                    <div class="os-options">
+                      <label class="os-option">
+                        <input type="radio" name="os" value="Android" checked required>
+                        <span class="os-option-box">
+                          <span class="os-icon"><i class="bi bi-android2" aria-hidden="true"></i></span>
+                          <span><strong>Android</strong><small>Samsung, Xiaomi, Motorola y otros</small></span>
+                          <span class="os-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span>
+                        </span>
+                      </label>
+                      <label class="os-option">
+                        <input type="radio" name="os" value="iOS" required>
+                        <span class="os-option-box">
+                          <span class="os-icon"><i class="bi bi-apple" aria-hidden="true"></i></span>
+                          <span><strong>iOS</strong><small>iPhone</small></span>
+                          <span class="os-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span>
+                        </span>
+                      </label>
+                    </div>
+                    <p class="field-error" id="osError" role="alert"></p>
+                  </fieldset>
+
+                  <div class="row g-3 g-md-4 mt-1">
+                    <div class="col-md-8 col-lg-7">
+                      <label class="form-label" for="deviceAge">Antigüedad aproximada <span class="req" aria-hidden="true">*</span><span class="visually-hidden">(obligatorio)</span></label>
+                      <select class="form-select sf-field" id="deviceAge" name="age" required aria-describedby="ageError">
+                        <option value="" selected disabled>Selecciona una opción</option>
+                        <option value="lt1">Menos de 1 año</option>
+                        <option value="1to2">Entre 1 y 2 años</option>
+                        <option value="3to4">Entre 3 y 4 años</option>
+                        <option value="gt4">Más de 4 años</option>
+                        <option value="unknown">No estoy seguro</option>
+                      </select>
+                      <p class="field-error" id="ageError" role="alert"></p>
+                    </div>
+                  </div>
+                </section>
+
+                <!-- PASO 2 -->
+                <section class="step-panel" id="step-2" data-step="2" aria-labelledby="step2Title" hidden>
+                  <div class="step-heading">
+                    <span class="step-kicker">Paso 2 de 4</span>
+                    <h3 id="step2Title" tabindex="-1">¿Qué problemas presenta el equipo?</h3>
+                    <p>Selecciona todos los síntomas que reconozcas. Puedes elegir más de uno.</p>
+                  </div>
+
+                  <fieldset class="symptom-fieldset">
+                    <legend class="visually-hidden">Síntomas que presenta el dispositivo</legend>
+                    <div class="symptom-grid" id="symptomGrid">
+                      <label class="symptom-option">
+                        <input type="checkbox" name="symptoms" value="battery">
+                        <span class="symptom-box">
+                          <span class="symptom-icon"><i class="bi bi-battery-half" aria-hidden="true"></i></span>
+                          <span class="symptom-text">La batería se descarga rápidamente</span>
+                          <span class="symptom-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span>
+                        </span>
+                      </label>
+                      <label class="symptom-option">
+                        <input type="checkbox" name="symptoms" value="heat">
+                        <span class="symptom-box">
+                          <span class="symptom-icon"><i class="bi bi-thermometer-half" aria-hidden="true"></i></span>
+                          <span class="symptom-text">El celular se calienta demasiado</span>
+                          <span class="symptom-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span>
+                        </span>
+                      </label>
+                      <label class="symptom-option">
+                        <input type="checkbox" name="symptoms" value="screen">
+                        <span class="symptom-box">
+                          <span class="symptom-icon"><i class="bi bi-display" aria-hidden="true"></i></span>
+                          <span class="symptom-text">La pantalla presenta problemas</span>
+                          <span class="symptom-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span>
+                        </span>
+                      </label>
+                      <label class="symptom-option">
+                        <input type="checkbox" name="symptoms" value="performance">
+                        <span class="symptom-box">
+                          <span class="symptom-icon"><i class="bi bi-hourglass-split" aria-hidden="true"></i></span>
+                          <span class="symptom-text">El celular funciona lentamente</span>
+                          <span class="symptom-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span>
+                        </span>
+                      </label>
+                      <label class="symptom-option">
+                        <input type="checkbox" name="symptoms" value="charging">
+                        <span class="symptom-box">
+                          <span class="symptom-icon"><i class="bi bi-lightning-charge" aria-hidden="true"></i></span>
+                          <span class="symptom-text">No carga correctamente</span>
+                          <span class="symptom-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span>
+                        </span>
+                      </label>
+                      <label class="symptom-option">
+                        <input type="checkbox" name="symptoms" value="connectivity">
+                        <span class="symptom-box">
+                          <span class="symptom-icon"><i class="bi bi-wifi" aria-hidden="true"></i></span>
+                          <span class="symptom-text">Presenta problemas de conexión</span>
+                          <span class="symptom-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span>
+                        </span>
+                      </label>
+                      <label class="symptom-option">
+                        <input type="checkbox" name="symptoms" value="restarts">
+                        <span class="symptom-box">
+                          <span class="symptom-icon"><i class="bi bi-arrow-repeat" aria-hidden="true"></i></span>
+                          <span class="symptom-text">El dispositivo se reinicia solo</span>
+                          <span class="symptom-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span>
+                        </span>
+                      </label>
+                      <label class="symptom-option">
+                        <input type="checkbox" name="symptoms" value="audio">
+                        <span class="symptom-box">
+                          <span class="symptom-icon"><i class="bi bi-volume-up" aria-hidden="true"></i></span>
+                          <span class="symptom-text">Tiene problemas de sonido</span>
+                          <span class="symptom-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span>
+                        </span>
+                      </label>
+                      <label class="symptom-option">
+                        <input type="checkbox" name="symptoms" value="camera">
+                        <span class="symptom-box">
+                          <span class="symptom-icon"><i class="bi bi-camera" aria-hidden="true"></i></span>
+                          <span class="symptom-text">Presenta problemas de cámara</span>
+                          <span class="symptom-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span>
+                        </span>
+                      </label>
+                      <label class="symptom-option">
+                        <input type="checkbox" name="symptoms" value="other">
+                        <span class="symptom-box">
+                          <span class="symptom-icon"><i class="bi bi-three-dots" aria-hidden="true"></i></span>
+                          <span class="symptom-text">Otro problema</span>
+                          <span class="symptom-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span>
+                        </span>
+                      </label>
+                    </div>
+                  </fieldset>
+
+                  <div class="selection-bar">
+                    <span class="selection-count" id="symptomCount" aria-live="polite"><i class="bi bi-check2-square" aria-hidden="true"></i> 0 síntomas seleccionados</span>
+                    <span>Selecciona al menos uno.</span>
+                  </div>
+                  <p class="field-error" id="symptomsError" role="alert"></p>
+                </section>
+
+                <!-- PASO 3 -->
+                <section class="step-panel" id="step-3" data-step="3" aria-labelledby="step3Title" hidden>
+                  <div class="step-heading">
+                    <span class="step-kicker">Paso 3 de 4</span>
+                    <h3 id="step3Title" tabindex="-1">Describe lo que notas</h3>
+                    <p>Un poco de contexto ayuda a ajustar la orientación. Este paso es opcional, salvo que hayas elegido “Otro problema”.</p>
+                  </div>
+
+                  <div class="textarea-block">
+                    <label class="form-label" for="symptomDescription">Descripción del problema <span class="optional-tag">Opcional</span></label>
+                    <textarea class="form-control sf-field" id="symptomDescription" name="description" rows="5" maxlength="600" placeholder="Ej. La batería baja de 100 % a 40 % en pocas horas y el equipo se calienta cuando lo pongo a cargar. Empezó hace una semana." aria-describedby="descriptionHelp descriptionError"></textarea>
+                    <div class="textarea-meta">
+                      <span id="descriptionHelp">No incluyas contraseñas ni datos personales.</span>
+                      <span><span id="charCount">0</span>/600</span>
+                    </div>
+                    <p class="field-error" id="descriptionError" role="alert"></p>
+                    <p class="field-help other-help" id="otherHelp" hidden><i class="bi bi-info-circle" aria-hidden="true"></i> Describe brevemente el otro problema para poder orientarte mejor.</p>
+                  </div>
+
+                  <fieldset class="form-group-block context-block">
+                    <legend class="form-label">Contexto adicional <span class="optional-tag">Opcional</span></legend>
+                    <div class="context-options">
+                      <label class="context-option">
+                        <input type="checkbox" id="contextImpact" name="contextImpact">
+                        <span class="context-box"><i class="bi bi-arrow-down-square" aria-hidden="true"></i> El problema apareció después de un golpe o caída</span>
+                      </label>
+                      <label class="context-option">
+                        <input type="checkbox" id="contextLiquid" name="contextLiquid">
+                        <span class="context-box"><i class="bi bi-droplet-half" aria-hidden="true"></i> El equipo tuvo contacto con líquido o humedad</span>
+                      </label>
+                    </div>
+                  </fieldset>
+
+                  <div class="info-inline">
+                    <i class="bi bi-shield-lock" aria-hidden="true"></i>
+                    <span>Tu descripción se analiza en este navegador y no se guarda en ningún servidor.</span>
+                  </div>
+                </section>
+
+                <!-- PASO 4 -->
+                <section class="step-panel" id="step-4" data-step="4" aria-labelledby="step4Title" hidden>
+                  <div class="analysis-loading" id="analysisLoading">
+                    <div class="loading-orb" aria-hidden="true">
+                      <span class="loading-ring loading-ring-1"></span>
+                      <span class="loading-ring loading-ring-2"></span>
+                      <i class="bi bi-cpu"></i>
+                    </div>
+                    <span class="step-kicker">Paso 4 de 4</span>
+                    <h3 id="step4Title" tabindex="-1">Analizando los síntomas…</h3>
+                    <p class="analysis-stage" id="analysisStage" aria-live="polite">Revisando la información del dispositivo</p>
+                    <progress class="analysis-progress" id="analysisProgress" max="100" value="5" aria-label="Progreso del análisis">5 %</progress>
+                    <ul class="analysis-steps">
+                      <li data-load-step="0"><span class="analysis-step-icon"><i class="bi bi-phone" aria-hidden="true"></i></span> Revisando los datos del dispositivo</li>
+                      <li data-load-step="1"><span class="analysis-step-icon"><i class="bi bi-diagram-3" aria-hidden="true"></i></span> Cruzando los síntomas con patrones conocidos</li>
+                      <li data-load-step="2"><span class="analysis-step-icon"><i class="bi bi-list-check" aria-hidden="true"></i></span> Preparando causas y recomendaciones</li>
+                    </ul>
+                    <p class="analysis-note"><i class="bi bi-shield-lock" aria-hidden="true"></i> El análisis se completa localmente. No se envían datos.</p>
+                  </div>
+
+                  <div class="report-output" id="reportOutput" hidden>
+                    <div class="report-print-head">
+                      <div class="print-brand">
+                        <img src="assets/img/logo-mark.svg" alt="" width="44" height="44">
+                        <div><strong>SMARTFIX AI</strong><span>Servicio técnico de celulares · Oruro, Bolivia</span></div>
+                      </div>
+                      <div class="print-contact">WhatsApp: +591 60404018<br><span id="printDate"></span></div>
+                    </div>
+
+                    <div id="reportContent"></div>
+
+                    <div class="report-actions no-print">
+                      <button class="btn btn-sf btn-sf-primary" type="button" id="printReportBtn">
+                        <i class="bi bi-printer" aria-hidden="true"></i> Imprimir informe
+                      </button>
+                      <button class="btn btn-sf btn-sf-outline" type="button" id="savePdfBtn">
+                        <i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> Guardar PDF
+                      </button>
+                      <a class="btn btn-sf btn-sf-wa" id="reportWhatsApp" href="https://wa.me/59160404018" target="_blank" rel="noopener">
+                        <i class="bi bi-whatsapp" aria-hidden="true"></i> Enviar por WhatsApp
+                      </a>
+                      <button class="btn btn-sf btn-sf-link" type="button" id="restartDiagnosisBtn">
+                        <i class="bi bi-arrow-counterclockwise" aria-hidden="true"></i> Nuevo análisis
+                      </button>
+                    </div>
+                    <p class="report-actions-note no-print">
+                      El botón “Guardar PDF” abre el diálogo de impresión del navegador. Allí puedes elegir la opción “Guardar como PDF”.
+                    </p>
+                  </div>
+                </section>
+              </div>
+
+              <div class="wizard-foot" id="wizardFoot">
+                <button class="btn btn-sf btn-sf-link" type="button" id="prevStepBtn" hidden>
+                  <i class="bi bi-arrow-left" aria-hidden="true"></i> Atrás
+                </button>
+                <span class="foot-hint" id="footHint" aria-live="polite">Paso 1 de 4</span>
+                <button class="btn btn-sf btn-sf-primary" type="submit" id="nextStepBtn">
+                  Continuar <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <aside class="diagnosis-aside" aria-label="Información sobre el diagnóstico">
+            <div class="aside-card aside-card-accent reveal">
+              <span class="aside-icon"><i class="bi bi-info-circle" aria-hidden="true"></i></span>
+              <h4>Un análisis orientativo, no un veredicto</h4>
+              <p>El informe se basa en los síntomas que describes. No se conecta al celular, no identifica la falla con certeza y no reemplaza una revisión técnica presencial.</p>
+              <ul class="aside-list">
+                <li><i class="bi bi-check2" aria-hidden="true"></i> Posibles causas según tus síntomas.</li>
+                <li><i class="bi bi-check2" aria-hidden="true"></i> Recomendaciones inmediatas y preventivas.</li>
+                <li><i class="bi bi-check2" aria-hidden="true"></i> Nivel de prioridad orientativo.</li>
+              </ul>
+            </div>
+
+            <div class="aside-card aside-card-tech reveal">
+              <div class="aside-tech-head">
+                <span class="aside-icon aside-icon-cyan"><i class="bi bi-cpu" aria-hidden="true"></i></span>
+                <span class="aside-mini-label">Transparencia</span>
+              </div>
+              <h4>Sin falsas promesas de IA</h4>
+              <p>No simulamos una conexión con ChatGPT ni con otro modelo generativo. Usamos un motor de reglas que ordena síntomas y patrones de fallas comunes.</p>
+              <div class="tech-meta">
+                <span><i class="bi bi-code-slash" aria-hidden="true"></i> Reglas locales</span>
+                <span><i class="bi bi-shield-check" aria-hidden="true"></i> Sin servidor</span>
+              </div>
+            </div>
+
+            <div class="aside-card aside-card-help reveal">
+              <span class="aside-icon aside-icon-green"><i class="bi bi-whatsapp" aria-hidden="true"></i></span>
+              <h4>¿Prefieres hablar con alguien?</h4>
+              <p>Cuéntanos qué pasa con tu equipo y coordinamos la revisión. La atención se gestiona por WhatsApp.</p>
+              <a class="btn btn-sf btn-sf-wa w-100" href="https://wa.me/59160404018" target="_blank" rel="noopener">
+                <i class="bi bi-whatsapp" aria-hidden="true"></i> Escribir por WhatsApp
+              </a>
+              <span class="aside-location"><i class="bi bi-geo-alt" aria-hidden="true"></i> Oruro, Bolivia</span>
+            </div>
+
+            <div class="aside-safety">
+              <i class="bi bi-exclamation-triangle" aria-hidden="true"></i>
+              <p><strong>Seguridad primero:</strong> si la batería está hinchada, el equipo estuvo mojado o notas olor a quemado, no intentes cargarlo ni abrirlo. Busca una revisión técnica.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= CÓMO FUNCIONA ============================= -->
+    <section class="section section-how" id="como-funciona" aria-labelledby="howTitle">
+      <div class="container">
+        <div class="section-head section-head-center section-head-light reveal">
+          <span class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> Cómo funciona <span class="eyebrow-line"></span></span>
+          <h2 class="section-title" id="howTitle">De los síntomas a una orientación clara.</h2>
+          <p class="section-lead">Cuatro pasos simples. Sin cuentas, sin instalar aplicaciones y con la información necesaria para dar el siguiente paso.</p>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-step reveal">
+            <span class="process-number" aria-hidden="true">01</span>
+            <span class="process-icon"><i class="bi bi-phone" aria-hidden="true"></i></span>
+            <h3>Selecciona tu dispositivo</h3>
+            <p>Indica marca, modelo, sistema operativo y una antigüedad aproximada.</p>
+          </article>
+          <article class="process-step reveal">
+            <span class="process-number" aria-hidden="true">02</span>
+            <span class="process-icon"><i class="bi bi-ui-checks" aria-hidden="true"></i></span>
+            <h3>Describe los problemas</h3>
+            <p>Marca los síntomas que reconoces y añade contexto si lo consideras útil.</p>
+          </article>
+          <article class="process-step reveal">
+            <span class="process-number" aria-hidden="true">03</span>
+            <span class="process-icon"><i class="bi bi-cpu" aria-hidden="true"></i></span>
+            <h3>Recibe un análisis orientativo</h3>
+            <p>Consulta posibles causas, recomendaciones y un nivel de prioridad.</p>
+          </article>
+          <article class="process-step reveal">
+            <span class="process-number" aria-hidden="true">04</span>
+            <span class="process-icon"><i class="bi bi-whatsapp" aria-hidden="true"></i></span>
+            <h3>Contacta con SMARTFIX AI</h3>
+            <p>Comparte tu caso por WhatsApp para coordinar una revisión técnica.</p>
+          </article>
+        </div>
+
+        <div class="process-cta reveal">
+          <div>
+            <span class="process-cta-kicker">¿Listo para empezar?</span>
+            <p>El diagnóstico en línea toma pocos minutos y no requiere registro.</p>
+          </div>
+          <div class="process-cta-actions">
+            <a class="btn btn-sf btn-sf-primary" href="#diagnostico">
+              <i class="bi bi-stars" aria-hidden="true"></i> Analizar mi celular
+            </a>
+            <a class="btn btn-sf btn-sf-outline-light" href="https://wa.me/59160404018" target="_blank" rel="noopener">
+              <i class="bi bi-whatsapp" aria-hidden="true"></i> Hablar por WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= POR QUÉ ELEGIRNOS ============================= -->
+    <section class="section section-why" id="por-que" aria-labelledby="whyTitle">
+      <div class="container">
+        <div class="section-head section-head-split reveal">
+          <div>
+            <span class="eyebrow"><span class="eyebrow-line"></span> ¿Por qué SMARTFIX AI?</span>
+            <h2 class="section-title" id="whyTitle">Tecnología con explicaciones claras.</h2>
+          </div>
+          <p class="section-lead">Una forma más ordenada de entender tu dispositivo antes de tomar una decisión sobre su cuidado o reparación.</p>
+        </div>
+
+        <div class="why-grid">
+          <article class="why-card reveal">
+            <span class="why-icon"><i class="bi bi-stars" aria-hidden="true"></i></span>
+            <h3>Tecnología e IA como apoyo</h3>
+            <p>Combinamos una herramienta digital de análisis con la evaluación de un caso real, no al revés.</p>
+          </article>
+          <article class="why-card reveal">
+            <span class="why-icon"><i class="bi bi-browser-chrome" aria-hidden="true"></i></span>
+            <h3>Diagnóstico accesible</h3>
+            <p>Disponible en línea desde tu navegador, sin instalar nada ni crear una cuenta.</p>
+          </article>
+          <article class="why-card reveal">
+            <span class="why-icon"><i class="bi bi-person-check" aria-hidden="true"></i></span>
+            <h3>Atención personalizada</h3>
+            <p>Coordinamos por WhatsApp según el caso, para que puedas explicar lo que ocurre con tu equipo.</p>
+          </article>
+          <article class="why-card reveal">
+            <span class="why-icon"><i class="bi bi-chat-left-text" aria-hidden="true"></i></span>
+            <h3>Información comprensible</h3>
+            <p>Explicamos los posibles problemas en lenguaje claro, sin tecnicismos innecesarios.</p>
+          </article>
+          <article class="why-card reveal">
+            <span class="why-icon"><i class="bi bi-shield-plus" aria-hidden="true"></i></span>
+            <h3>Orientación para el cuidado</h3>
+            <p>Incluimos recomendaciones preventivas para batería, temperatura, almacenamiento y uso diario.</p>
+          </article>
+          <article class="why-card reveal">
+            <span class="why-icon"><i class="bi bi-geo-alt" aria-hidden="true"></i></span>
+            <h3>Innovación con raíz local</h3>
+            <p>Una propuesta tecnológica pensada y gestionada desde Oruro, Bolivia.</p>
+          </article>
+        </div>
+
+        <div class="honesty-band reveal">
+          <span class="honesty-icon"><i class="bi bi-patch-check" aria-hidden="true"></i></span>
+          <div>
+            <h3>Preferimos ser claros desde el inicio.</h3>
+            <p>No prometemos adivinar la falla ni reemplazar el trabajo de un técnico. El análisis ordena tus síntomas y te orienta; la revisión presencial es la que permite confirmar el origen del problema.</p>
+          </div>
+          <a class="btn btn-sf btn-sf-outline" href="#faq">Leer las preguntas frecuentes <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= NOSOTROS ============================= -->
+    <section class="section section-about" id="nosotros" aria-labelledby="aboutTitle">
+      <div class="container">
+        <div class="about-head reveal">
+          <div>
+            <span class="eyebrow"><span class="eyebrow-line"></span> Nosotros</span>
+            <h2 class="section-title" id="aboutTitle">Conectamos tecnología, innovación y soluciones.</h2>
+          </div>
+          <p class="section-lead">
+            SMARTFIX AI es un emprendimiento tecnológico orientado al servicio técnico de celulares, que busca ofrecer soluciones prácticas para los problemas cotidianos de los dispositivos móviles. Nuestra propuesta integra herramientas digitales e inteligencia artificial como apoyo al diagnóstico, proporcionando a los usuarios información y orientación para el cuidado y mantenimiento de sus equipos.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-visual reveal" aria-hidden="true">
+            <div class="orbit-stage">
+              <div class="orbit-glow"></div>
+              <span class="orbit-label orbit-label-1"><i class="bi bi-cpu"></i> Diagnóstico</span>
+              <span class="orbit-label orbit-label-2"><i class="bi bi-tools"></i> Servicio técnico</span>
+              <span class="orbit-label orbit-label-3"><i class="bi bi-chat-dots"></i> Atención directa</span>
+              <div class="orbit-rings">
+                <span class="ring ring-1"></span>
+                <span class="ring ring-2"></span>
+                <span class="ring ring-3"></span>
+              </div>
+              <span class="orbit-node orbit-node-1"></span>
+              <span class="orbit-node orbit-node-2"></span>
+              <span class="orbit-node orbit-node-3"></span>
+              <div class="orbit-core">
+                <img src="assets/img/logo-mark.svg" alt="" width="120" height="120">
+              </div>
+              <div class="orbit-caption"><span></span> Oruro, Bolivia</div>
+            </div>
+            <div class="orbit-side-note">
+              <i class="bi bi-lightbulb" aria-hidden="true"></i>
+              <p>Un servicio técnico que busca explicar antes de intervenir.</p>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <div class="mv-grid">
+              <article class="mv-card reveal">
+                <span class="mv-icon"><i class="bi bi-bullseye" aria-hidden="true"></i></span>
+                <h3>Misión</h3>
+                <p>Brindar soluciones tecnológicas orientadas al diagnóstico, mantenimiento y reparación de dispositivos móviles, integrando innovación y herramientas digitales para mejorar la experiencia de los usuarios.</p>
+              </article>
+              <article class="mv-card reveal">
+                <span class="mv-icon"><i class="bi bi-eye" aria-hidden="true"></i></span>
+                <h3>Visión</h3>
+                <p>Consolidarnos como una propuesta innovadora de servicio técnico de dispositivos móviles, destacándonos por la incorporación de tecnologías inteligentes y la calidad de atención.</p>
+              </article>
+            </div>
+
+            <div class="about-values reveal">
+              <span class="about-values-label">Lo que guía nuestro trabajo</span>
+              <div class="value-chips">
+                <span><i class="bi bi-check2" aria-hidden="true"></i> Innovación</span>
+                <span><i class="bi bi-check2" aria-hidden="true"></i> Transparencia</span>
+                <span><i class="bi bi-check2" aria-hidden="true"></i> Cercanía</span>
+                <span><i class="bi bi-check2" aria-hidden="true"></i> Cuidado del dispositivo</span>
+              </div>
+            </div>
+
+            <div class="about-location reveal">
+              <span class="about-location-icon"><i class="bi bi-geo-alt" aria-hidden="true"></i></span>
+              <div>
+                <strong>Oruro, Bolivia</strong>
+                <span>Atención coordinada por WhatsApp</span>
+              </div>
+              <a class="hero-wa-link" href="https://wa.me/59160404018" target="_blank" rel="noopener" aria-label="Escribir a SMARTFIX AI por WhatsApp">
+                <i class="bi bi-whatsapp" aria-hidden="true"></i> Conversar
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= FAQ ============================= -->
+    <section class="section section-faq" id="faq" aria-labelledby="faqTitle">
+      <div class="container">
+        <div class="section-head section-head-center reveal">
+          <span class="eyebrow"><span class="eyebrow-line"></span> Preguntas frecuentes <span class="eyebrow-line"></span></span>
+          <h2 class="section-title" id="faqTitle">Respuestas claras antes de empezar.</h2>
+          <p class="section-lead">Lo que necesitas saber sobre el diagnóstico en línea, la atención y el uso de tus datos.</p>
+        </div>
+
+        <div class="faq-layout">
+          <div class="accordion faq-accordion reveal" id="faqAccordion">
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="faqHeading1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                  ¿Qué es SMARTFIX AI?
+                </button>
+              </h3>
+              <section id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  <p>SMARTFIX AI es un emprendimiento tecnológico de Oruro, Bolivia, orientado al servicio técnico de celulares. Combina la atención técnica con una herramienta digital de diagnóstico orientativo para ayudarte a entender mejor lo que ocurre con tu equipo.</p>
+                </div>
+              </section>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="faqHeading2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                  ¿Cómo funciona el diagnóstico inteligente?
+                </button>
+              </h3>
+              <section id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  <p>Completas los datos del dispositivo y seleccionas los síntomas. La página analiza esa información con un motor de reglas basado en patrones de fallas comunes y genera un informe orientativo con posibles causas, recomendaciones y un nivel de prioridad. Todo el proceso se realiza en tu navegador.</p>
+                </div>
+              </section>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="faqHeading3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                  ¿El diagnóstico de IA identifica exactamente la falla?
+                </button>
+              </h3>
+              <section id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  <p>No. Es un análisis orientativo basado en los síntomas que describes; no se conecta a tu equipo ni reemplaza una revisión presencial. Solo una revisión técnica puede confirmar la causa después de evaluar el dispositivo.</p>
+                </div>
+              </section>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="faqHeading4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                  ¿Qué dispositivos puedo analizar?
+                </button>
+              </h3>
+              <section id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  <p>Puedes analizar celulares Android e iOS de diferentes marcas. La herramienta trabaja con los síntomas que seleccionas y no necesita acceso al sistema del equipo. Si tu marca no aparece en la lista, elige “Otra marca” y escribe el modelo.</p>
+                </div>
+              </section>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="faqHeading5">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+                  ¿El diagnóstico tiene algún costo?
+                </button>
+              </h3>
+              <section id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading5" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  <p>La herramienta de diagnóstico en línea está disponible en esta página sin registro. Cualquier revisión técnica o servicio presencial se coordina directamente por WhatsApp; las condiciones se confirman después de conocer el caso. Esta página no publica precios porque dependen de la evaluación del equipo.</p>
+                </div>
+              </section>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="faqHeading6">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse6" aria-expanded="false" aria-controls="faqCollapse6">
+                  ¿Cómo puedo solicitar asistencia técnica?
+                </button>
+              </h3>
+              <section id="faqCollapse6" class="accordion-collapse collapse" aria-labelledby="faqHeading6" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  <p>Escríbenos por WhatsApp al <a href="https://wa.me/59160404018" target="_blank" rel="noopener">+591 60404018</a>. Cuéntanos la marca, el modelo y los síntomas del equipo. Si ya realizaste el diagnóstico, puedes compartir el resumen del informe para facilitar la conversación.</p>
+                </div>
+              </section>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="faqHeading7">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse7" aria-expanded="false" aria-controls="faqCollapse7">
+                  ¿La página repara directamente mi celular?
+                </button>
+              </h3>
+              <section id="faqCollapse7" class="accordion-collapse collapse" aria-labelledby="faqHeading7" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  <p>No. Esta página es informativa y permite generar un diagnóstico orientativo. La atención técnica se coordina por WhatsApp y se realiza de forma presencial; la web no interviene el dispositivo ni ejecuta reparaciones de forma remota.</p>
+                </div>
+              </section>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="faqHeading8">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse8" aria-expanded="false" aria-controls="faqCollapse8">
+                  ¿Qué pasa con mis datos?
+                </button>
+              </h3>
+              <section id="faqCollapse8" class="accordion-collapse collapse" aria-labelledby="faqHeading8" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  <p>El diagnóstico funciona localmente y no guarda la información en un servidor. El formulario de contacto tampoco envía datos: prepara un mensaje para que tú decidas enviarlo por WhatsApp. No incluyas contraseñas ni información sensible.</p>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <aside class="faq-aside reveal" aria-label="Ayuda adicional">
+            <span class="faq-aside-icon"><i class="bi bi-chat-dots" aria-hidden="true"></i></span>
+            <h3>¿No encuentras tu respuesta?</h3>
+            <p>Escríbenos directamente. Podemos orientarte sobre el siguiente paso para tu dispositivo.</p>
+            <a class="btn btn-sf btn-sf-wa w-100" href="https://wa.me/59160404018" target="_blank" rel="noopener">
+              <i class="bi bi-whatsapp" aria-hidden="true"></i> Hablar por WhatsApp
+            </a>
+            <span class="faq-aside-meta"><i class="bi bi-geo-alt" aria-hidden="true"></i> Oruro, Bolivia</span>
+            <span class="faq-aside-meta"><i class="bi bi-clock-history" aria-hidden="true"></i> Coordinación según disponibilidad</span>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= CONTACTO ============================= -->
+    <section class="section section-contact" id="contacto" aria-labelledby="contactTitle">
+      <div class="container">
+        <div class="section-head section-head-center reveal">
+          <span class="eyebrow"><span class="eyebrow-line"></span> Contacto <span class="eyebrow-line"></span></span>
+          <h2 class="section-title" id="contactTitle">Cuéntanos qué está pasando con tu celular.</h2>
+          <p class="section-lead">Completa el formulario y prepararemos un mensaje para que lo envíes por WhatsApp. Sin servidores intermediarios y sin guardar tus datos.</p>
+        </div>
+
+        <div class="contact-shell">
+          <aside class="contact-panel reveal" aria-labelledby="contactPanelTitle">
+            <div class="contact-panel-bg" aria-hidden="true">
+              <span class="contact-orb"></span>
+              <svg viewBox="0 0 400 400" fill="none" preserveAspectRatio="xMidYMid slice">
+                <g stroke="rgba(56,189,248,.16)" stroke-width="1">
+                  <path d="M-20 90H95L140 45H260L310 95H420"/>
+                  <path d="M-20 320H70L120 270H240L300 330H420"/>
+                  <path d="M80 420V340L130 290V200"/>
+                  <path d="M340 420V330L295 285V210L340 165V80"/>
+                </g>
+                <g fill="#38bdf8">
+                  <circle cx="95" cy="90" r="3" opacity=".55"/>
+                  <circle cx="310" cy="95" r="3" opacity=".45"/>
+                  <circle cx="120" cy="270" r="2.5" opacity=".45"/>
+                  <circle cx="295" cy="285" r="2.5" opacity=".45"/>
+                </g>
+              </svg>
+            </div>
+            <span class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> Hablemos</span>
+            <h3 id="contactPanelTitle">La forma más directa de coordinar una revisión.</h3>
+            <p class="contact-panel-lead">Envíanos los detalles de tu equipo. Te responderemos por WhatsApp para conocer el caso y coordinar el siguiente paso.</p>
+
+            <ul class="contact-methods">
+              <li>
+                <span class="contact-method-icon contact-method-wa"><i class="bi bi-whatsapp" aria-hidden="true"></i></span>
+                <div>
+                  <span>WhatsApp comercial</span>
+                  <a href="https://wa.me/59160404018" target="_blank" rel="noopener">+591 60404018</a>
+                </div>
+              </li>
+              <li>
+                <span class="contact-method-icon"><i class="bi bi-geo-alt" aria-hidden="true"></i></span>
+                <div>
+                  <span>Ubicación</span>
+                  <strong>Oruro, Bolivia</strong>
+                </div>
+              </li>
+              <li>
+                <span class="contact-method-icon"><i class="bi bi-chat-square-dots" aria-hidden="true"></i></span>
+                <div>
+                  <span>Modalidad de atención</span>
+                  <strong>Coordinación por WhatsApp</strong>
+                </div>
+              </li>
+            </ul>
+
+            <a class="btn btn-sf btn-sf-wa btn-lg-sf w-100" href="https://wa.me/59160404018" target="_blank" rel="noopener">
+              <i class="bi bi-whatsapp" aria-hidden="true"></i> Abrir WhatsApp
+            </a>
+            <p class="contact-panel-note"><i class="bi bi-info-circle" aria-hidden="true"></i> Por seguridad, no compartas contraseñas ni datos de acceso del dispositivo.</p>
+          </aside>
+
+          <div class="contact-form-card reveal">
+            <div class="contact-form-head">
+              <span class="contact-form-kicker">Formulario de contacto</span>
+              <h3>Prepara tu mensaje</h3>
+              <p>Los campos marcados con <span class="req">*</span> son obligatorios. Este formulario no envía información a un servidor: genera un enlace que tú abres en WhatsApp.</p>
+            </div>
+
+            <form id="contactForm" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label" for="contactName">Nombre <span class="req" aria-hidden="true">*</span><span class="visually-hidden">(obligatorio)</span></label>
+                  <input class="form-control sf-field" id="contactName" name="name" type="text" placeholder="Tu nombre" autocomplete="name" maxlength="60" required aria-describedby="contactNameError">
+                  <p class="field-error" id="contactNameError" role="alert"></p>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="contactPhone">Número de celular <span class="req" aria-hidden="true">*</span><span class="visually-hidden">(obligatorio)</span></label>
+                  <input class="form-control sf-field" id="contactPhone" name="phone" type="tel" placeholder="Ej. 70012345" autocomplete="tel" inputmode="tel" maxlength="25" required aria-describedby="contactPhoneError">
+                  <p class="field-error" id="contactPhoneError" role="alert"></p>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="contactEmail">Correo electrónico <span class="optional-tag">Opcional</span></label>
+                  <input class="form-control sf-field" id="contactEmail" name="email" type="email" placeholder="tucorreo@ejemplo.com" autocomplete="email" maxlength="100" aria-describedby="contactEmailError">
+                  <p class="field-error" id="contactEmailError" role="alert"></p>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="contactReason">Motivo de consulta <span class="req" aria-hidden="true">*</span><span class="visually-hidden">(obligatorio)</span></label>
+                  <select class="form-select sf-field" id="contactReason" name="reason" required aria-describedby="contactReasonError">
+                    <option value="" selected disabled>Selecciona un motivo</option>
+                    <option value="Diagnóstico de celular">Diagnóstico de celular</option>
+                    <option value="Reparación de celular">Reparación de celular</option>
+                    <option value="Mantenimiento preventivo">Mantenimiento preventivo</option>
+                    <option value="Optimización del dispositivo">Optimización del dispositivo</option>
+                    <option value="Asesoramiento tecnológico">Asesoramiento tecnológico</option>
+                    <option value="Consulta general">Consulta general</option>
+                  </select>
+                  <p class="field-error" id="contactReasonError" role="alert"></p>
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="contactMessage">Mensaje <span class="req" aria-hidden="true">*</span><span class="visually-hidden">(obligatorio)</span></label>
+                  <textarea class="form-control sf-field" id="contactMessage" name="message" rows="4" maxlength="600" placeholder="Cuéntanos la marca, el modelo y qué está pasando con tu celular." required aria-describedby="contactMessageHelp contactMessageError"></textarea>
+                  <div class="textarea-meta">
+                    <span id="contactMessageHelp">Mínimo 10 caracteres. No incluyas contraseñas.</span>
+                    <span><span id="contactCharCount">0</span>/600</span>
+                  </div>
+                  <p class="field-error" id="contactMessageError" role="alert"></p>
+                </div>
+                <div class="col-12">
+                  <label class="consent-option">
+                    <input type="checkbox" id="contactConsent" name="consent" required aria-describedby="contactConsentError">
+                    <span class="consent-box" aria-hidden="true"><i class="bi bi-check-lg"></i></span>
+                    <span>Entiendo que este formulario prepara un mensaje y que los datos se compartirán por WhatsApp cuando yo envíe el mensaje. <span class="req" aria-hidden="true">*</span><span class="visually-hidden">(obligatorio)</span></span>
+                  </label>
+                  <p class="field-error" id="contactConsentError" role="alert"></p>
+                </div>
+              </div>
+
+              <button class="btn btn-sf btn-sf-primary btn-submit" type="submit" id="contactSubmitBtn">
+                <span class="btn-submit-label"><i class="bi bi-whatsapp" aria-hidden="true"></i> Preparar mensaje de WhatsApp</span>
+                <span class="btn-submit-loading" hidden><span class="btn-spinner" aria-hidden="true"></span> Preparando mensaje…</span>
+              </button>
+              <p class="form-footnote"><i class="bi bi-shield-lock" aria-hidden="true"></i> No almacenamos estos datos. Solo se usan para redactar el mensaje que abrirás en WhatsApp.</p>
+            </form>
+
+            <div class="wa-result" id="waResult" hidden aria-live="polite">
+              <div class="wa-result-head">
+                <span class="wa-result-icon"><i class="bi bi-check2-circle" aria-hidden="true"></i></span>
+                <div>
+                  <h3>Tu mensaje está listo</h3>
+                  <p>Revísalo y ábrelo en WhatsApp para enviarlo. También puedes copiarlo.</p>
+                </div>
+              </div>
+              <pre id="waPreview"></pre>
+              <div class="wa-result-actions">
+                <a class="btn btn-sf btn-sf-wa" id="waOpenLink" href="https://wa.me/59160404018" target="_blank" rel="noopener">
+                  <i class="bi bi-whatsapp" aria-hidden="true"></i> Abrir WhatsApp
+                </a>
+                <button class="btn btn-sf btn-sf-outline" type="button" id="waCopyBtn">
+                  <i class="bi bi-clipboard" aria-hidden="true"></i> Copiar mensaje
+                </button>
+              </div>
+              <p class="wa-result-note" id="waResultNote">Si cambias los datos del formulario, vuelve a generar el mensaje para actualizarlo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================= FOOTER ============================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="brand" href="#inicio">
+            <img class="brand-mark" src="assets/img/logo-mark.svg" alt="" width="44" height="44">
+            <span class="brand-type">SMARTFIX<span class="brand-ai">AI</span></span>
+            <span class="visually-hidden"> Ir al inicio</span>
+          </a>
+          <p>Servicio técnico de celulares y diagnóstico inteligente orientativo. Tecnología pensada para cuidar tu dispositivo y ayudarte a tomar mejores decisiones.</p>
+          <span class="footer-location"><i class="bi bi-geo-alt" aria-hidden="true"></i> Oruro, Bolivia</span>
+        </div>
+
+        <div class="footer-col">
+          <h3>Navegación</h3>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#diagnostico">Diagnóstico IA</a></li>
+            <li><a href="#como-funciona">Cómo funciona</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#faq">Preguntas frecuentes</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Servicios</h3>
+          <ul>
+            <li><a href="#servicios">Diagnóstico de celulares</a></li>
+            <li><a href="#servicios">Reparación de celulares</a></li>
+            <li><a href="#servicios">Mantenimiento preventivo</a></li>
+            <li><a href="#servicios">Optimización del dispositivo</a></li>
+            <li><a href="#servicios">Asesoramiento tecnológico</a></li>
+            <li><a href="#diagnostico">Diagnóstico inteligente</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-contact">
+          <h3>Contacto</h3>
+          <ul>
+            <li>
+              <span class="footer-contact-icon"><i class="bi bi-whatsapp" aria-hidden="true"></i></span>
+              <a href="https://wa.me/59160404018" target="_blank" rel="noopener">+591 60404018</a>
+            </li>
+            <li>
+              <span class="footer-contact-icon"><i class="bi bi-geo-alt" aria-hidden="true"></i></span>
+              <span>Oruro, Bolivia</span>
+            </li>
+            <li>
+              <span class="footer-contact-icon"><i class="bi bi-chat-square-dots" aria-hidden="true"></i></span>
+              <span>Atención coordinada por WhatsApp</span>
+            </li>
+          </ul>
+          <a class="btn btn-sf btn-sf-wa w-100" href="https://wa.me/59160404018" target="_blank" rel="noopener">
+            <i class="bi bi-whatsapp" aria-hidden="true"></i> Escribir por WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-disclaimer">
+        <i class="bi bi-info-circle" aria-hidden="true"></i>
+        <p><strong>Aviso importante:</strong> el diagnóstico en línea de SMARTFIX AI es orientativo y se basa en los síntomas proporcionados por el usuario. No reemplaza una revisión técnica presencial ni garantiza la identificación exacta de la falla.</p>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="currentYear">2026</span> SMARTFIX AI. Todos los derechos reservados.</p>
+        <div class="footer-bottom-links">
+          <a href="#diagnostico">Diagnóstico IA</a>
+          <span aria-hidden="true">·</span>
+          <a href="https://wa.me/59160404018" target="_blank" rel="noopener">WhatsApp</a>
+          <span aria-hidden="true">·</span>
+          <span>Oruro, Bolivia</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <aside class="floating-actions" aria-label="Acciones rápidas">
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Volver arriba" title="Volver arriba" aria-hidden="true" tabindex="-1">
+      <i class="bi bi-arrow-up" aria-hidden="true"></i>
+    </button>
+    <a class="wa-float" href="https://wa.me/59160404018" target="_blank" rel="noopener" aria-label="Escribir a SMARTFIX AI por WhatsApp">
+      <span class="wa-float-tooltip">¿Hablamos?</span>
+      <i class="bi bi-whatsapp" aria-hidden="true"></i>
+    </a>
+  </aside>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.0/dist/sweetalert2.all.min.js"></script>
+  <script defer src="assets/js/main.js"></script>
+  <script defer src="assets/js/diagnosis-rules.js"></script>
+  <script defer src="assets/js/diagnosis.js"></script>
+  <script defer src="assets/js/contact.js"></script>
+</body>
+</html>

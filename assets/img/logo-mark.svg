@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="SMARTFIX AI">
+  <defs>
+    <linearGradient id="sf-bg" x1="8" y1="4" x2="58" y2="62" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#152446"/>
+      <stop offset="1" stop-color="#070d1c"/>
+    </linearGradient>
+    <linearGradient id="sf-grad" x1="16" y1="14" x2="50" y2="52" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38bdf8"/>
+      <stop offset="0.52" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+    <filter id="sf-glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect x="1.25" y="1.25" width="61.5" height="61.5" rx="16" fill="url(#sf-bg)" stroke="#2b3e63" stroke-width="1.5"/>
+  <g opacity="0.32" stroke="#38bdf8" stroke-width="1" fill="none" stroke-linecap="round">
+    <path d="M9 20v-8h8M55 44v8h-8M9 44v8h8M55 20v-8h-8"/>
+  </g>
+  <path d="M44 21H30a7.25 7.25 0 0 0 0 14.5h4.5a7.25 7.25 0 0 1 0 14.5H20" fill="none" stroke="url(#sf-grad)" stroke-width="6.5" stroke-linecap="round" filter="url(#sf-glow)"/>
+  <circle cx="48.5" cy="16.5" r="2.4" fill="#38bdf8"/>
+  <circle cx="15.5" cy="47.5" r="1.7" fill="#38bdf8" opacity="0.7"/>
+</svg>
