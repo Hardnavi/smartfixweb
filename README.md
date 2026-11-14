@@ -105,7 +105,21 @@ Usa la extensión **Live Server** y abre `index.html` con “Open with Live Serv
 
 ## 4. Publicación en GitHub Pages
 
-### 4.1. Crear el repositorio
+Sitio publicado en:
+
+```text
+https://hardnavi.github.io/smartfixweb/
+```
+
+Repositorio:
+
+```text
+https://github.com/Hardnavi/smartfixweb
+```
+
+### 4.1. Repositorio y publicación inicial (referencia)
+
+El proyecto ya está vinculado al repositorio `Hardnavi/smartfixweb` y publicado con GitHub Pages desde la rama `main`, carpeta raíz. Para recrear el proceso desde cero:
 
 1. Crea un repositorio nuevo en GitHub, por ejemplo `smartfixweb`.
 2. No es necesario inicializarlo con README si ya tienes estos archivos.
@@ -120,17 +134,17 @@ git remote add origin https://github.com/TU-USUARIO/smartfixweb.git
 git push -u origin main
 ```
 
-### 4.2. Activar GitHub Pages
+### 4.2. Configuración de GitHub Pages
 
 1. Entra al repositorio en GitHub.
 2. Ve a **Settings → Pages**.
 3. En **Build and deployment**, elige **Deploy from a branch**.
 4. Selecciona la rama `main` y la carpeta `/ (root)`.
 5. Pulsa **Save**.
-6. Espera uno o dos minutos. La URL será similar a:
+6. Espera uno o dos minutos. La URL publicada es:
 
 ```text
-https://TU-USUARIO.github.io/smartfixweb/
+https://hardnavi.github.io/smartfixweb/
 ```
 
 El archivo `.nojekyll` evita que GitHub Pages procese el sitio con Jekyll y ayuda a servir correctamente todos los archivos.
@@ -162,21 +176,14 @@ Si usas un dominio propio:
 
 ### 5.1. URL absoluta para Open Graph
 
-Los rastreadores de redes sociales no siempre resuelven imágenes relativas. En `index.html`, cambia:
+Las etiquetas `og:image`, `twitter:image`, `og:url` y `canonical` ya apuntan a la URL publicada:
 
 ```html
-<meta property="og:image" content="assets/img/og-image.png">
-<meta name="twitter:image" content="assets/img/og-image.png">
+<meta property="og:image" content="https://hardnavi.github.io/smartfixweb/assets/img/og-image.png">
+<meta name="twitter:image" content="https://hardnavi.github.io/smartfixweb/assets/img/og-image.png">
 ```
 
-por la URL pública absoluta, por ejemplo:
-
-```html
-<meta property="og:image" content="https://TU-USUARIO.github.io/smartfixweb/assets/img/og-image.png">
-<meta name="twitter:image" content="https://TU-USUARIO.github.io/smartfixweb/assets/img/og-image.png">
-```
-
-Si publicas en un dominio propio, usa ese dominio. Verifica la vista previa con el depurador de Open Graph de la red social que vayas a utilizar.
+Si publicas en un dominio propio o cambias el nombre del repositorio, actualiza esas URLs y el bloque JSON-LD. Verifica la vista previa con el depurador de Open Graph de la red social que vayas a utilizar.
 
 ### 5.2. Número de WhatsApp
 
